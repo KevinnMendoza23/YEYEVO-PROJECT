@@ -1,0 +1,115 @@
+/*********************************
+    Estilos para el formulario de Registro
+*********************************/
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #b71c1c, #1a1a1a); /* 🔥 Degradado rojo a negro */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Caja del formulario */
+  .register-box {
+    background: #f5f5f5; /* 🤍 Blanco beige */
+    border-radius: 12px;
+    padding: 50px 40px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Título */
+  .register-box h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Inputs */
+  .input-group {
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-group input:focus {
+    border: 2px solid #ff3b3b;
+    outline: none;
+  }
+  
+  /* Botón de Registro */
+  .register-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #ff3b3b;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background: #d32f2f;
+    cursor: pointer;
+  }
+  
+  /* Mensaje de error */
+  .error-message {
+    color: #d9534f;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el enlace de inicio de sesión */
+  .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .register-link a {
+    color: #ff3b3b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    color: #c62828;
+  }  

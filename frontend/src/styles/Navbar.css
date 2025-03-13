@@ -1,0 +1,104 @@
+/* 📌 Ajuste general del navbar */
+.navbar-container {
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 80px; /* Altura aumentada */
+    display: flex;
+    align-items: center;
+}
+
+/* 📌 Contenido del navbar */
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* 📌 Logo */
+.navbar-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ff5722;
+    text-decoration: none;
+}
+
+/* 📌 Enlaces del navbar */
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* 📌 Iconos con más espacio */
+.navbar-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    padding-top: 5px; /* Espacio extra arriba */
+}
+
+/* 📌 Iconos más centrados y mejor tamaño */
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px; /* Más separación del texto */
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar-links a:hover .nav-icon {
+    transform: scale(1.2);
+}
+
+.navbar-links a:hover {
+    color: #ff5722;
+}
+
+/* 📌 Botón hamburguesa oculto en PC */
+.navbar-toggle {
+    display: none;
+}
+
+/* 📌 MENÚ RESPONSIVO (solo en móviles) */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block; /* Se muestra el botón hamburguesa */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 80px; /* Ajustado a la nueva altura del navbar */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        display: none; /* Por defecto, oculto en móviles */
+    }
+
+    /* 📌 Cuando se activa el menú, se muestra correctamente */
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .nav-icon {
+        width: 40px; /* Iconos más grandes en móviles */
+        height: 40px;
+    }
+}

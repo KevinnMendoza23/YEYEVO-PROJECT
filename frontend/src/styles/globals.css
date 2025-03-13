@@ -1,0 +1,29 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo del carrusel */
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Estilo del contenedor principal */
+  .home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Botones llamativos */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }  

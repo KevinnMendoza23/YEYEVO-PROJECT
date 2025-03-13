@@ -1,0 +1,102 @@
+/* 📌 Ajustar el tamaño del carrusel */
+.custom-carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-item {
+  height: 500px; /* Ajusta la altura según necesites */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre toda la pantalla sin espacios en blanco */
+}
+
+/* 📌 Mejorar visibilidad del texto sobre imágenes claras */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 📌 Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px; /* Reducir altura en dispositivos móviles */
+  }
+}
+
+/* 📌 Estilos del título de bienvenida */
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* 📌 Sección de Categorías */
+.categories-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* 📌 Grid de categorías (2x2) */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  border: 3px solid black; /* ✅ Borde negro */
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card img {
+  width: 100%;
+  max-width: 200px; /* 🔥 Más grandes */
+  height: 200px;
+  object-fit: cover; /* Mantiene la imagen cuadrada */
+  border-radius: 8px;
+}
+
+.category-card p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 📌 Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(1, 1fr); /* 🔥 En móvil, 1 por fila */
+  }
+}
